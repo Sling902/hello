@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet"> 
+
+    <style>
+        .header {
+            font-family: Quicksand, monospace;
+            font-size: 40px;
+            color: blueviolet;
+            border-width: 10px;
+            border-radius: 10px;
+            border-color:aqua;
+            border-style: solid;
+            margin-right: 1100px;
+        }
+
+        .div-style {
+            font-family: Prompt, monospace;
+            font-size: 30px;
+
+        }
+
+        #cat {
+            background-color:bisque;
+            background-blend-mode: overlay;
+            margin-right: 1000px;
+        }
+
+        #dog {
+            background-color:bisque;
+            background-blend-mode: overlay;
+            margin-right: 1000px;
+        }
+
+        #unsorted-list {
+            background-color:rgb(141, 180, 182);
+            background-blend-mode: overlay;
+            border-color:darkcyan;
+            border-width:5px;
+            margin-right: 1000px;
+        }
+
+        #sorted-list {
+            background-color:rgb(141, 180, 182);
+            background-blend-mode: overlay;
+            border-color:rgb(59, 143, 143);
+            border-width:5px;
+            margin-right: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1 class='header'>DogPhotoApp</h1>
+
+
+        <p>Click <a href='www.google.com' target='_blank'>here</a> for more pictures.</p>
+        <div class='div-style'>
+        <a href='https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg' target='_blank'><img style='width: 600px' src='https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg' alt='Picture of a dog'></a>
+
+        <p id='cat'>Top three things dogs love:</p>
+        <ul id='unsorted-list'>
+            <li>Playing outside</li>
+            <li>being petted</li>
+            <li>food</li>
+        </ul>
+
+        <p id='dog'>Top three things dogs hate:</p>
+        <ol id='sorted-list'>
+            <li>Loud Noises</li>
+            <li>being left alone</li>
+            <li>sleeping</li>
+        </ol>
+
+        <form action='https://www.google.com'>
+            <input type='text' required placeholder='dog URL here'>
+            <button type='submit'>Submit</button>
+        </form>
+        
+        <form action='https://www.google.com'>
+            <label for='indoor'>
+                <input type='radio' id='indoor' name='indoor-outdoor'>Indoor
+            </label>
+
+            <label for='outdoor'>
+                <input type='radio' id='outdoor' name='indoor-outdoor'>Outdoor
+            </label>
+        </form>
+
+        <form action='https://www.google.com'>
+            <label for='Angry'>
+                <input type='checkbox' id='Angry' name='personality'>Angry
+            </label>
+            <label for='Quiet'>
+                <input type='checkbox' id='Quiet' name='personality'>Quiet
+
+            </label>
+
+            <label for='Shy'>
+
+                <input type='checkbox' id='Shy' name='personality'>Shy
+            </label>
+        </form>
+        </div>
+    </main>
+
+</body>
